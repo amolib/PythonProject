@@ -6,6 +6,7 @@ service_obj = Service("C:/Users/Amol Deshmukh/PycharmProjects/chromedriver_win32
 driver = webdriver.Chrome(service=service_obj)
 driver.get("https://rahulshettyacademy.com/angularpractice/")
 driver.maximize_window()
+driver.implicitly_wait(200)
 
 # ID, XPATH, CSSSelector, Classname, name, linkText
 driver.find_element(By.NAME,"name").send_keys("Amol D")
